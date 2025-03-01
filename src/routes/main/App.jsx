@@ -1,7 +1,7 @@
 function App() {
     return (
         <>
-            <div className="App">Vite App</div>
+            <div className="text-xl">Vite App</div>
         </>
     )
 }
