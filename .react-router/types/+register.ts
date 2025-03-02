@@ -11,6 +11,7 @@ type Params = {
   "/": {};
   "/signin": {};
   "/signup": {};
+  "/profile-setup": {};
   "/networking": {};
   "/review": {};
   "/conference": {};

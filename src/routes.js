@@ -10,6 +10,9 @@ export default [
     // Sign-up Page
     route("/signup", "./routes/signup/Signup.jsx"),
     
+    // Profile Setup Page
+    route("/profile-setup", "./routes/profile-setup/ProfileSetup.jsx"),
+    
     // Networking Page
     route("/networking", "./routes/networking/Networking.jsx"),
     
