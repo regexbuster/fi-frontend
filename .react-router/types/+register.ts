@@ -10,6 +10,7 @@ type Params = {
   "/": {};
   "/": {};
   "/signin": {};
+  "/signup": {};
   "/networking": {};
   "/review": {};
   "/conference": {};

@@ -7,6 +7,9 @@ export default [
     // Sign-in Page
     route("/signin", "./routes/signin/Signin.jsx"),
     
+    // Sign-up Page
+    route("/signup", "./routes/signup/Signup.jsx"),
+    
     // Networking Page
     route("/networking", "./routes/networking/Networking.jsx"),
     

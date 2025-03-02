@@ -1,8 +1,8 @@
-// routes/signin/Signin.jsx
+// routes/signup/Signup.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Signin() {
+function Signup() {
   return (
     <>
       {/* Navbar with back button */}
@@ -21,15 +21,39 @@ function Signin() {
         <div className="navbar-end"></div>
       </div>
 
-      {/* Sign in form with darker fields and reduced shadow */}
+      {/* Sign up form */}
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Sign In</h1>
-            <p className="py-6">Enter your details to access your account.</p>
+            <h1 className="text-5xl font-bold">Sign Up</h1>
+            <p className="py-6">Create a new account to get started.</p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-md bg-base-100">
             <div className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">First Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="John"
+                  className="input input-bordered bg-gray-100 text-gray-800"
+                  required
+                />
+              </div>
+              
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Last Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Doe"
+                  className="input input-bordered bg-gray-100 text-gray-800"
+                  required
+                />
+              </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -41,6 +65,7 @@ function Signin() {
                   required
                 />
               </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
@@ -52,14 +77,16 @@ function Signin() {
                   required
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                  <span className="label-text-alt">Must be at least 8 characters</span>
                 </label>
               </div>
+              
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Sign In</button>
+                <button className="btn btn-primary">Create Account</button>
               </div>
+              
               <div className="text-center mt-4">
-                <p>Don't have an account? <Link to="/signup" className="link link-primary">Sign Up</Link></p>
+                <p>Already have an account? <Link to="/signin" className="link link-primary">Sign In</Link></p>
               </div>
             </div>
           </div>
@@ -69,4 +96,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Signup;
